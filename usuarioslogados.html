@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="js/clientes.js" defer></script>~
+    <link rel="stylesheet" href="css/clientes.css">
+    <title>Clientes</title>
+</head>
+<body>
+    
+   
+
+
+    </div>
+  <div class="body">
+  <p id="add" onclick="abrir_cadastro()">ADD</p>
+  <p id="msg"></p>
+   <table id="tabela">
+    
+    <thead id="thead">
+
+      <tr id="tr">
+        
+      </tr>
+    </thead>
+      <tbody>
+
+     </tbody>
+
+   </table>
+
+
+  
+
+   <form action="" id="login" class="login">
+    <p id="fechar_cadastro" onclick="fechar_cadastro()">x</p>
+    <h2>Novo Cliente</h2>
+    <div class="box-user">
+       <input type="text" name="nome" id="nome"  onclick="fecharMensagem()" required>
+       <label for="nome">Nome</label>
+    </div>
+    <div class="box-user">
+       <input type="email" name="email" id="email" onclick="fecharMensagem()" required>
+       <label for="email">email</label>
+    </div>
+ 
+    <div class="box-user">
+       <input type="text" name="senha" id="senha"  onclick="fecharMensagem()" required>
+       <label for="senha">Senha</label>
+    </div>
+  
+    
+    <a href="#" class="btn"    onclick="cadastrar()">
+      
+       <span></span>
+       <span></span>
+       <span></span>
+       <span></span>
+      Registar
+    </a>
+   
+  
+</form>
+
+
+
+
+<form action="" id="actualizar" class="login">
+  <p id="fechar_cadastro" onclick="fechar_actualizar()">x</p>
+  <h2>Actualizar Dados Clientes</h2>
+  <div class="box-user">
+     <input type="text" name="nome" id="nome"  onclick="fecharMensagem()" required>
+     <label for="nome">Nome</label>
+  </div>
+
+
+  <div class="box-user">
+     <input type="email" name="email" id="email"  onclick="fecharMensagem()" required>
+     <label for="email">email</label>
+  </div>
+  <div class="box-user">
+   <input type="text" name="senha" id="senha"  onclick="fecharMensagem()" required>
+   <label for="senha">senha</label>
+</div>
+
+  
+  <a href="#" class="btn"    onclick=" Update_Cliente(postID);">
+    
+     <span></span>
+     <span></span>
+     <span></span>
+     <span></span>
+   Actualizar Dados
+  </a>
+ 
+
+</form>
+
+
+
+<div id="mensagem">
+ <p id="ms"></p>
+ <p id="sair" onclick="fecharMensagem()">x</p>
+</div>
+  
+ 
+
+  </div>
+
+
+</body>
+</html>
